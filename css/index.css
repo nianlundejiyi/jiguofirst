@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+@keyframes imgAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*头部导航栏*/
+header > div {
+  border-bottom: 1px solid #cececf;
+  box-shadow: 0 0 5px #cececf inset;
+}
+.header-top {
+  height: 70px;
+}
+.header-top img {
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-top ul {
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+}
+.header-top ul li {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.header-top ul li > a {
+  color: black;
+  text-decoration: none;
+}
+.header-top ul li:hover {
+  color: #fe5341;
+}
+.header-top ul .active {
+  color: #fe5341;
+}
+.header-top div {
+  height: 70px;
+  line-height: 70px;
+  float: right;
+}
+.header-top div span {
+  font-size: 28px;
+  vertical-align: middle;
+}
+.header-top div button {
+  border: 1px solid red;
+  color: red;
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  margin-left: 35px;
+}
+/*音响图片*/
+.header-pic {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/original.jpg") no-repeat center top;
+}
+.header-pic div {
+  position: relative;
+}
+.header-pic div div {
+  animation: move 1s linear forwards;
+  position: absolute;
+  top: -100px;
+  right: -450px;
+  float: right;
+  text-align: right;
+}
+.header-pic div div h1 {
+  margin-top: 40px;
+  color: white;
+  font-size: 35px;
+  font-weight: 250;
+}
+.header-pic div div > span {
+  margin-top: 20px;
+  display: inline-block;
+  background: rgba(247, 246, 246, 0.3);
+  color: white;
+  padding: 8px 10px;
+  margin-left: 5px;
+}
+.header-pic div div p {
+  margin-top: 15px;
+  color: white;
+  font-size: 18px;
+}
+.header-pic div div button {
+  width: 240px;
+  height: 50px;
+  outline: none;
+  border-radius: 3px;
+  background-color: #FE5341;
+  color: white;
+  border: none;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: 宋体;
+}
+/*轮播图部分*/
+.rmsy {
+  padding: 18px 0 16px;
+  font-size: 20px;
+  color: #474747;
+  font-family: 微软雅黑;
+  font-weight: bold;
+}
+.leftbtn {
+  z-index: 20;
+  position: absolute;
+  top: 120px;
+  left: 0px;
+}
+.rightbtn {
+  z-index: 20;
+  position: absolute;
+  top: 120px;
+  right: 0px;
+}
+.leftbtn,
+.rightbtn {
+  height: 78px;
+  width: 37px;
+  font-size: 10px;
+  color: #ccc;
+  border: none;
+  outline: none;
+ background-color: aqua .5;
+  cursor: pointer;
+}
+.mian-viewpaper {
+  top: 0px;
+  width: 1000px;
+  overflow: hidden;
+  height: 300px !important;
+  position: relative;
+}
+.mian-viewpaper .viewpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4010px;
+  height: 288px;
+}
+.mian-viewpaper .viewpaper ul {
+  display: inline-block;
+}
+.mian-viewpaper .viewpaper ul li {
+  display: inline-block;
+  margin-right: 32px;
+  height: 285px;
+  width: 220px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.mian-viewpaper .viewpaper ul li:last-of-type {
+  margin-right: 0;
+}
+.mian-viewpaper .viewpaper ul li img {
+  width: 220px;
+  height: 130px;
+}
+.mian-viewpaper .viewpaper ul li h2 {
+  text-align: center;
+  font-size: 16px;
+  height: 48px;
+  font-weight: bold;
+  color: #333;
+}
+.mian-viewpaper .viewpaper ul li .v-p1 {
+  text-align: center;
+}
+.mian-viewpaper .viewpaper ul li .v-p1 > span {
+  padding: 2px 10px;
+  font-size: 12px;
+  margin: 0 5px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  color: #f00;
+}
+.mian-viewpaper .viewpaper ul li p {
+  margin-top: 10px;
+  text-align: center;
+}
+.mian-viewpaper .viewpaper ul li p span:nth-of-type(1) {
+  color: #fe5341;
+}
+.mian-viewpaper .viewpaper ul li p span {
+  color: black;
+}
+.mian-viewpaper .viewpaper ul li .v-p2 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fe5341;
+}
+/*报告精选*/
+.select {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+.select .select-pp {
+  font-size: 20px;
+  color: #474747;
+  padding: 18px 0 16px;
+  font-weight: bold;
+}
+.select .pic-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 526px;
+}
+.select .pic-items .items-1 {
+  border: 1px solid #ccc;
+  width: 220px;
+  height: 240px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.select .pic-items .items-1 img {
+  width: 220px;
+  height: 130px;
+}
+.select .pic-items .items-1 div {
+  padding: 7px 10px 1px;
+}
+.select .pic-items .items-1 div p {
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.select .pic-items .items-1 div .susu {
+  color: #a3a3a3;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.select .pic-items .items-1 div .susu span:nth-of-type(1) {
+  margin-right: 86px;
+}
+.select .pic-items .items-1 div .susu span {
+  font-size: 12px;
+}
+/*导购精选*/
+.shops div p {
+  font-size: 20px;
+  color: #474747;
+  padding: 18px 0 16px;
+  font-weight: bold;
+}
+.shops div ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 282px;
+}
+.shops div ul li {
+  width: 220px;
+  height: 240px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.shops div ul li img {
+  width: 220px;
+  height: 130px;
+}
+.shops div ul li div {
+  background: url("../img/listbg.jpg") no-repeat bottom left;
+  background-size: 221px 19px;
+  box-sizing: border-box;
+  width: 220px;
+  height: 121px;
+  padding: 7px 10px 10px;
+}
+.shops div ul li div > p {
+  font-size: 14px;
+  color: #474747;
+  font-weight: 200;
+}
+.shops div ul li div p:nth-of-type(2) {
+  margin-left: 150px;
+  padding: 0;
+}
+.shops div ul li div p:nth-of-type(2) span {
+  font-size: 12px;
+}
+/*发现酷玩*/
+.find-w {
+  background-color: #F7F7F7;
+}
+.find-w .find-d > p {
+  font-size: 20px;
+  color: #474747;
+  padding: 18px 0 16px;
+  font-weight: bold;
+}
+.find-w .find-d .find-d-d {
+  width: 100%;
+  height: 1032px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.find-w .find-d .find-d-d .items-1 {
+  border: 1px solid #ccc;
+  width: 220px;
+  height: 240px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.find-w .find-d .find-d-d .items-1 img {
+  width: 220px;
+  height: 130px;
+}
+.find-w .find-d .find-d-d .items-1 img:hover {
+  animation: imgAnimation 0.5s linear infinite;
+}
+.find-w .find-d .find-d-d .items-1 div {
+  padding: 7px 10px 1px;
+}
+.find-w .find-d .find-d-d .items-1 div p {
+  font-size: 14px;
+  height: 45px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.find-w .find-d .find-d-d .items-1 div .susu {
+  color: #a3a3a3;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.find-w .find-d .find-d-d .items-1 div .susu span:nth-of-type(1) {
+  margin-right: 100px;
+  color: red;
+}
+.find-w .find-d .find-d-d .items-1 div .susu span {
+  font-size: 12px;
+}
+/*底部*/
+footer {
+  width: 100%;
+  height: 360px;
+  background-color: #505050;
+}
+footer .section {
+  padding-top: 40px;
+}
+footer .section .box {
+  width: 100%;
+  height: 280px;
+}
+footer .section .box dl {
+  padding-right: 20px;
+  float: left;
+}
+footer .section .box dl dt {
+  color: #FFFFFF;
+}
+footer .section .box dl dd {
+  font-size: 13px !important;
+  color: #A3A3A3;
+}
+footer .section .box dl a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+footer .section p {
+  text-align: center;
+  color: #A3A3A3;
+}
+@keyframes move {
+  0% {
+    top: -100px;
+    right: -450px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

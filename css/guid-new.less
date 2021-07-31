@@ -1,0 +1,95 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+//发现酷玩头部公共样式
+.h-top{
+  text-align: center;
+  h1{
+    padding: 30px 0 30px;
+    font-size: 40px;
+    color: #333;
+    font-weight: normal;
+  }
+  .h-p1{
+    span{
+      cursor: pointer;
+      display: inline-block;
+      width: 165px;
+      height: 42px;
+      font-size: 18px;
+      &:hover{
+        color: #fe5431;
+      }
+    }
+    .active{
+      color: #fe5431;
+      border-bottom: 4px #fe5431 solid;
+      a{
+        color: #fe5431;
+        text-decoration: none;
+      }
+    }
+  }
+}
+//主体
+.k-main{
+  height: 1142px;
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+  padding-top: 25px;
+  div{
+    //width: 100%;
+    //height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ul{
+      margin-bottom: 10px;
+      width: 220px;
+      height: 240px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      //overflow: hidden;
+      //background-color: #bb9090;
+      li{
+        width: 220px;
+        height: 235px;
+        img{
+          width: 220px;
+          height: 130px;
+        }
+        div{
+          //背景图片
+          background: url("../img/listbg.jpg") no-repeat center bottom;
+          padding: 7px 10px 10px;
+          height: 100px;
+          p:nth-of-type(1){
+            font-size: 14px;
+            height: 58px;
+            overflow: hidden;
+            word-break: break-all;
+            span{
+              display: inline-block;
+              font-size: 12px;
+              color: #a3a3a3;
+            }
+          }
+          p:nth-of-type(2){
+            margin-top: 10px;
+            color: #fe5341;
+            span:first-of-type{
+              color: #fe5341;
+              font-size: 14px;
+              margin-left: 140px;
+            }
+            span:nth-of-type(2),span:nth-of-type(3){
+              font-size: 12px;
+              color: #a3a3a3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

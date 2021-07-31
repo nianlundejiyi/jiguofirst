@@ -1,0 +1,119 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.h-top {
+  text-align: center;
+}
+.h-top h1 {
+  padding: 30px 0 30px;
+  font-size: 40px;
+  color: #333;
+  font-weight: normal;
+}
+.h-top .h-p1 span {
+  cursor: pointer;
+  display: inline-block;
+  width: 165px;
+  height: 42px;
+  font-size: 18px;
+}
+.h-top .h-p1 span:hover {
+  color: #fe5431;
+}
+.h-top .h-p1 .active {
+  color: #fe5431;
+  border-bottom: 4px #fe5431 solid;
+}
+.h-top .h-p1 .active a {
+  color: #fe5431;
+  text-decoration: none;
+}
+.u-title {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.u-title a {
+  display: inline-block;
+  width: 165px;
+  height: 50px;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+.u-title .active {
+  color: black;
+}
+/*主体*/
+.k-main {
+  height: 1142px;
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+.k-main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.k-main div li {
+  position: relative;
+  list-style: none;
+  height: 285px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px !important;
+}
+.k-main div li img {
+  width: 220px;
+  height: 130px;
+}
+.k-main div li .shoufa {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  color: white;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #FE5341;
+  border-radius: 0 0 0 5px;
+}
+.k-main div li h2 {
+  margin: 0 9px;
+  text-align: center;
+  font-size: 16px;
+  height: 54px;
+  font-weight: bold;
+  color: #333;
+}
+.k-main div li .v-p1 {
+  text-align: center;
+}
+.k-main div li .v-p1 > span {
+  padding: 2px 10px;
+  font-size: 12px;
+  margin: 0 5px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  color: #f00;
+}
+.k-main div li p {
+  margin-top: 10px;
+  text-align: center;
+}
+.k-main div li p span:nth-of-type(1) {
+  color: #fe5341;
+}
+.k-main div li p span {
+  color: black;
+}
+.k-main div li .v-p2 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fe5341;
+}
+/*# sourceMappingURL=u-index.css.map */

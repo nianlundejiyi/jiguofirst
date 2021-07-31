@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>体验式专享</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/u-index.css">
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/doT.min.js"></script>
+    <!--    <script src="../js/k-new.js"></script>-->
+</head>
+<body>
+<!--头部-->
+<header>
+    <!--头部导航栏-->
+    <div>
+        <div class="header-top wrapper">
+            <img src="../img/logonew.png" alt="">
+            <ul>
+                <li ><a href="../index.html">首页</a></li>
+                <li><a href="../play/k-new.html">酷玩</a></li>
+                <li><a href="../guid/guid-new.html">导购</a></li>
+                <li><a href="../use/index.html"  class="active">试用</a></li>
+                <li><a href="">报告</a></li>
+            </ul>
+            <div>
+                <span class="iconfont icon-sousuo1"></span>
+                <button>注册</button>
+            </div>
+        </div>
+    </div>
+</header>
+<!--主体部分-->
+<!--发现酷玩头部公共样式-->
+<div class="h-top wrapper">
+    <h1>免费试用</h1>
+    <p class="h-p1">
+                 <span>
+                    <a href="index.html">大众试用</a>
+                </span>
+                <span  class="active">
+                    <a href="tys.html">体验师专享</a>
+                </span>
+    </p>
+</div>
+<div class="u-title">
+    <span><a href="index.html"  class="active">全部</a></span>
+    <span><a href="sq.html">申请中</a></span>
+    <span><a href="sy.html">试用中</a></span>
+    <span><a href="end.html">已结束</a></span>
+</div>
+<mian>
+    <!--        主体-->
+    <div class="k-main">
+        <div class="wrapper">
+            <div id="list10">
+                <script id="li_tmp10" type="text/x-dot-template">
+                    {{~it:value:index}}
+                         <li>
+                    <img src="{{=value.img}}" alt="">
+                    <span class="shoufa"
+                    style="width: 90px;font-size: 13px;
+                    background-color:#fbf4cb;color: #c4a96a">体验师专享</span>
+                    <h2>{{=value.text}}</h2>
+                        <p class="v-p1"><span>2021</span><span>20台</span></p>
+                        <p>
+                            <span>1392</span>
+                            <span>申请</span>
+                        </p>
+                        <p class="v-p2">剩余时间2天</p>
+
+                </li>
+                    {{~}}
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+</mian>
+<!--底部-->
+<footer class="foot">
+    <section class="section wrapper">
+        <div class="box">
+            <dl><img src="../img/code.png" width="160px" height="160px"></dl>
+            <dl>
+                <dt><img src="../img/logoImg.jpg" alt=""></dt>
+                <br>
+                <dd>全球酷玩试用导购平台</dd>
+                <dd>酷·新奇·好玩·品质</dd>
+                <br>
+                <dd>微信添加“JguoJguo”</dd>
+                <dd>获取我们的服务。</dd>
+            </dl>
+            <dl>
+                <dt>免费使用</dt>
+                <br>
+                <dd><a href="">试用流程</a></dd>
+                <dd><a href="">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <br>
+                <dd><a href="">智东西&emsp;WEIBUSI</a></dd>
+                <dd><a href="">搜狐IT&emsp;腾讯科技</a></dd>
+                <dd><a href="">搜狐数码&emsp;凤凰科技</a></dd>
+                <dd><a href="">凤凰数码&emsp;PConline</a></dd>
+                <dd><a href="">泡泡网&emsp;3W咖啡</a></dd>
+                <dd><a href="">ZUK社区&emsp;亿觅emie</a></dd>
+                <dd><a href="">极客公园&emsp;易迅易启玩</a></dd>
+                <dd><a href="">果库</a></dd>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                <br>
+                <dd><a href="">美亚海淘教程</a></dd>
+                <dd><a href="">日亚海淘教程</a></dd>
+                <dd><a href="">海淘转运攻略</a></dd>
+                <dd><a href="">kickstarter 众筹购买攻略</a></dd>
+                <dd><a href="">indiegogo 众筹购买攻略</a></dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                <br>
+                <dd><a href="">关于极果</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">商务合作:BD@jiguo.com</a></dd>
+                <dd><a href="">CEO邮箱:CEO@jiguo.com</a></dd>
+            </dl>
+
+        </div>
+        <p>©&nbsp;2016&nbsp;极果版权所有</p>
+    </section>
+</footer>
+</body>
+<script src="../js/doT.min.js"></script>
+<script src="../js/ajax.js"></script>
+<!--模板渲染js文件-->
+<script src="../js/index.js"></script>
+</html>
